@@ -63,3 +63,11 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
 }
+
+.image-card figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    background:darkblue;
+    color:#FFF;
+    text-align: center;
+    padding:5px;
+}
