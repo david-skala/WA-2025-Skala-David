@@ -15,15 +15,98 @@
     <nav>
         <div class="container">
             <a href="#">Bootstrap stránka</a>
-            <a href="">Tlačítka</a>
-            <a href="">Karty</a>
-            <a href="">Tabulky</a>
+            <a href="#buttons">Tlačítka</a>
+            <a href="#cards">Karty</a>
+            <a href="#tables">Tabulky</a>
         </div>
     </nav>
 
+    <header>
+        <h1>Vítejte na bootstrap stránce.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <a href="#buttons" class="btn btn-light btn-md">Začít</a>
+    </header>
+
+    <!-- Tlačítka -->
+
+    <section class="container" id="buttons">
+        <h2>Tlačítka</h2>
+        <p>Bootstrap umožňuje snadné stylování tlačítek pomocí tříd jako např. <code>btn-primary</code></p>
+
+        <!-- Ukazázka tlačítek -->
+        <div class="text-center">
+            <button class="btn btn-primary">Primary button</button>
+            <button class="btn btn-warning">Warning button</button>
+        </div>
+
+        <!-- Kód tlačítek-->
+        <pre>
+            <code>
+                &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
+                &lt;button class="btn btn-warning"&gt;Warning button&lt;/button&gt;
+            </code>
+        </pre>
+    </section>
+
+    <!-- Karty -->
+
+    <section class="container" id="cards">
+        <h2>Karty</h2>
+        <p>Karta v Bootstrapu je super způsob jak strukturovat obsah.</p> <br>
+
+        <!-- Ukazázka karet -->
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h3 class="card-title">Ukázková karta</h3>
+                <p class="card-text">Obsah ukázkové karty.</p>
+                <a href="#" class="btn btn-info btn-sm">Detail</a>
+            </div>
+        </div>        
+
+
+        <!-- Kód karet-->
 
 
 
+    </section> <br>
+
+    <!-- Tabulky -->
+
+    <section class="container" id="tables">
+        <h2>Tabulky</h2>
+        <p>Tabulky lze v Bootstrapu stylovat pomocí tříd jako např. <code>table-striped</code></p>
+    
+        <!-- Ukazázka tabulky -->
+        <table class="table table-bordered border-primary">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Jméno</th>
+                    <th>Adresa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jan Novák</td>
+                    <td>Adresa 1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jan Novák 2</td>
+                    <td>Adresa 2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jan Novák 3</td>
+                    <td>Adresa 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
