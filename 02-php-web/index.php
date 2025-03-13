@@ -1,5 +1,5 @@
 <?php
 
-echo "TEST VÝPISU"
+echo "TEST VÝPISU 2"
 
 ?>
