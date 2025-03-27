@@ -14,6 +14,11 @@
 
     <div class="container mt-5">
         <h2>Výpis knih</h2>
+            <?php if(!empty($books)): ?>
+                <?php var_dump($books); ?>
+            <?php else: ?>
+                <div class="alert alert-info">Žádná kniha nebyla nalezena.</div>
+            <?php endif; ?>
     </div>
 
     <!-- Bootstrap JS -->
