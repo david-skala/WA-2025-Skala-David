@@ -72,4 +72,10 @@ class Book {
             ':link' => $link
         ]);
     }
+
+    public function delete($id) {
+        $sql = "DELETE FROM books WHERE id = :id";
+        $stmt = $this->db->prepare($sql);
+        return $stmt->execute([':id' => $id]);
+    }
 }
