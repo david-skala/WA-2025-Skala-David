@@ -35,7 +35,7 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header bg-primary text-white text-center">
-                        <h2>Registrace nového uživatele</h2>
+                        <h2>Příhlášení stávajcího uživatele</h2>
                     </div>
                     <div class="card-body">
                         <form action="../../controllers/register.php" method="post" enctype="multipart/form-data">
@@ -46,31 +46,11 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email (nepovinný):</label>
-                                <input type="text" id="email" name="email" class="form-control" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Jméno (nepovinné):</label>
-                                <input type="text" id="name" name="name" class="form-control">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="surname" class="form-label">Příjmení (nepovinné):</label>
-                                <input type="text" id="surname" name="surname" class="form-control">
-                            </div>
-
-                            <div class="mb-3">
                                 <label for="password_hash" class="form-label">Heslo:<span class="text-danger">*</span></label>
                                 <input type="number" id="password_hash" name="password_hash" class="form-control" required>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="password_hash" class="form-label">Potvrzení hesla:<span class="text-danger">*</span></label>
-                                <input type="number" id="password_hash" name="password_hash" class="form-control" step="0.01" required>
-                            </div>
-
-                            <button type="submit" class="btn btn-success w-100">Registrovat se</button>
+                            <button type="submit" class="btn btn-success w-100">Příhlásit se</button>
                         </form>
                     </div>
                 </div>
