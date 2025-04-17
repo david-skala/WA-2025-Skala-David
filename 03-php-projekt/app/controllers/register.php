@@ -22,7 +22,7 @@ class UserController {
 
             // Uložení knihy do DB - dočasné řešení, než budeme mít výpis knih
             if ($this->userModel->create($username, $email, $password_hash, $name, $surname)) {
-                header("Location: ../controllers/user_list.php");
+                header("Location: ../views/auth/login.php");
                 exit();
             } else {
                 echo "Chyba při ukládání knihy.";
@@ -32,7 +32,7 @@ class UserController {
 
     public function listBooks () {
         $books = $this->userModel->getAll();
-        include '../views/books/l';
+        include '../views/auth/login.php';
     }
 }
 

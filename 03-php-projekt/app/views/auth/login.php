@@ -26,6 +26,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Výpis knih</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/03-php-projekt/app/views/auth/register.php">Registrace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/03-php-projekt/app/views/auth/login.php">Přihlášení</a>
+                        </li>
                     </ul>
                 </div>
             </div>
