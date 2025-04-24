@@ -45,7 +45,7 @@
                     <h2>Přihlášení uživatele</h2>
                 </div>
                 <div class="card-body">
-                    <form action="../../controllers/login.php" method="post">
+                    <form action="../../controllers/login_handler.php" method="post">
                         <div class="mb-3">
                             <label for="username" class="form-label">Uživatelské jméno:</label>
                             <input type="text" id="username" name="username" class="form-control" required>

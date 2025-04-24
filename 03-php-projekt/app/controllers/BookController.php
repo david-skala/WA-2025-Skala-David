@@ -23,8 +23,8 @@ class BookController {
             $isbn = htmlspecialchars($_POST['isbn']);
             $description = htmlspecialchars($_POST['description']);
             $link = htmlspecialchars($_POST['link']);
+            $user_id = isset($_POST['user_id']) ? intval($_POST['user_id']) : null;
 
-            // Zpracování nahraných obrázků
             $imagePaths = [];
             if (!empty($_FILES['images']['name'][0])) {
                 $uploadDir = '../public/images/';
@@ -33,13 +33,12 @@ class BookController {
                     $targetPath = $uploadDir . $filename;
 
                     if (move_uploaded_file($tmp_name, $targetPath)) {
-                        $imagePaths[] = '/public/images/' . $filename; // Relativní cesta
+                        $imagePaths[] = '/public/images/' . $filename;
                     }
                 }
             }
 
-            // Uložení knihy do DB - dočasné řešení, než budeme mít výpis knih
-            if ($this->bookModel->create($title, $author, $category, $subcategory, $year, $price, $isbn, $description, $link, $imagePaths)) {
+            if ($this->bookModel->create($title, $author, $category, $subcategory, $year, $price, $isbn, $description, $link, $imagePaths, $user_id)) {
                 header("Location: ../controllers/book_list.php");
                 exit();
             } else {
@@ -48,12 +47,12 @@ class BookController {
         }
     }
 
-    public function listBooks () {
+    public function listBooks() {
         $books = $this->bookModel->getAll();
         include '../views/books/book_list.php';
     }
 }
 
-// Volání metody při odeslání formuláře
+// Call method on form submit
 $controller = new BookController();
 $controller->createBook();
