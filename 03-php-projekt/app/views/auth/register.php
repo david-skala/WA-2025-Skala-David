@@ -24,7 +24,7 @@
                             <a class="nav-link" href="../books/book_create.php">Přidat knihu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Výpis knih</a>
+                            <a class="nav-link" href="/03-php-projekt/app/views/auth/login.php">Login</a>
                         </li>
                     </ul>
                 </div>

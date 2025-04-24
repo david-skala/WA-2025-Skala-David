@@ -35,9 +35,9 @@ if (isset($_GET['edit'])) {
     <div class="container mt-5">
 
     <h2>Výpis vytvořených uživatelů</h2>
-    <?php if (!empty($books)): ?>
+    <?php if (!empty($users)): ?>
         <table class="table table-bordered table-hover">
-            <thead class="table-info text-center">
+            <thead class="table-secondary text-center">
                 <tr>
                     <th>ID</th>
                     <th>Uživatelské jméno</th>
