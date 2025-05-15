@@ -47,6 +47,7 @@ if (isset($_GET['edit'])) {
                     <th>Cena</th>
                     <th>ISBN</th>
                     <th>Akce</th>
+                    <th>user ID</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,6 +64,7 @@ if (isset($_GET['edit'])) {
                         <a href="?edit=<?= $book['id'] ?>" class="btn btn-sm btn-outline-secondary">Upravit</a>
                         <a href="../../controllers/book_delete.php?id=<?= $book['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Opravdu chcete smazat tuto knihu?');">Smazat</a>
                     </td>
+                    <td><?= htmlspecialchars($book['user_id']) ?></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
