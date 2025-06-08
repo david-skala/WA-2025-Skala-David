@@ -1,0 +1,11 @@
+Login 1 (user)
+Uživatelské jméno: Franta
+Heslo: Franta12345
+
+Login 2 (user)
+Uživatelské jméno: Pepa
+Heslo: Pepa12345
+
+Admin login (admin)
+Uživatelské jméno: Admin
+Heslo: Admin12345
